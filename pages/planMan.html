@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/estilo.css">
+
+    </head>
+        <body>
+<header id="topo">
+    <a href="../index.html"><img src="../img/home.png" alt="ícone com uma casa indicando a página inicial"></a>
+    <p>Planejar manutenções preventivas/</br>
+    Guardar dados de manutenções</p>
+    <a href="notifi.html"><img src="../img/bell.png" alt="ícone com um sino indicando as notificações"></a>
+</header>
+<main id="main">
+    <form id="busca" name="busca" action="../js/script.js">
+        <input type="text" name="buscaaviao" id="buscaaviao" placeholder="Buscar avião">      
+       <button type="submit"><img src="../img/lupa.png"></button>
+    </form>
+    <div id="forms">
+        <form id="form1" name="manterAviao" action="../js/script.js">
+            <label for="numman">N° da manutenção</label>
+            <input type="number" id="numman" name="numman" required >
+            <label for="motman">Motivo da manutenção</label>
+            <input type="number" id="motman" name="motman" required>
+            <label for="obsrel">Observações/relatórios</label>
+            <input type="text" id="obsrel" name="obsrel" required>
+            <label for="dathora">Data e hora</label>
+            <input type="text" id="dathora" name="dathora" required>
+            <label for="repet">Repetir a cada:</label>
+            <div id="checkbox">
+                <div id="opts">
+            <input name="dia" id="dia" type="checkbox" value="Dia" required>
+            <label for="dia">Dia</label>
+        </div>
+        
+        <div id="opts">
+            <input name="semana" id="semana" type="checkbox" value="Semana" required>
+            <label for="semana">Semana</label>
+        </div>
+            <div id="opts">
+            <input name="quinzenal" id="quinzenal" type="checkbox" value="Quinzenal" required>
+            <label for="quinzenal">Quinzenal</label>
+        </div>
+            <div id="opts">
+            <input name="mensal" id="mensal" type="checkbox" value="Mensal" required>
+            <label for="mensal">Mensal</label>
+        </div>
+            <div id="opts">
+            <input name="naorep" id="naorep" type="checkbox" value="Não repete" required>
+            <label for="naorep">Não repete</label>
+        </div>
+    </div>
+        </form> 
+        <hr>
+        <div id="box">
+        <div id="infos">
+        <h2 style="font-size: medium; font-weight: normal;">Informações do avião</h2>
+        <h3>Fabricante:</h3>
+        <h3>N° de série: </h3>
+        <h3>Tamanho total: </h3>
+        <h3>Tamanho asa: </h3>
+        <h3>Velocidade: </h3>
+        <h3>Quantidade de assentos: </h3>
+        <h3>Modelo do avião: </h3>
+        <h3>Observações: </h3>
+        </div>
+        <hr style="width: 200px;">
+        <div id="infos">
+            <h2 style="font-size: medium; font-weight: normal;">Manutenções futuras</h2>
+            <h3>N° da manutenção: </h3>
+            <h3>Motivo da manutenção: </h3>
+            <h3>Observações: </h3>
+            <h3>Data e hora: </h3>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="rodape">
+<p>Desenvolvido por alunos da Fatec Zona Leste</p>
+<p>Todos os direitos reservados &copy;</p>
+</footer>
+        </body>
+</html>
