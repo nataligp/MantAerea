@@ -1,6 +1,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <link rel="stylesheet" href="../css/estilo.css">
 
     </head>
@@ -13,22 +15,30 @@
 <main id="main">
     <div id="forms">
         <form id="form1" name="manterAviao" action="../js/script.js">
-            <label for="fabricante">Fabricante</label>
+            <label class="label" for="fabricante">Fabricante</label>
             <input type="text" id="fab" name="fab" required >
-            <label for="numserie">N° de série</label>
+            
+            <label class="label" for="numserie">N° de série</label>
             <input type="number" id="numserie" name="numserie" required>
-            <label for="tamtotal">Tamanho total</label>
+            
+            <label class="label" for="tamtotal">Tamanho total</label>
             <input type="text" id="tamtotal" name="tamtotal" required>
-            <label for="tamasa">Tamanho da asa</label>
+            
+            <label class="label" for="tamasa">Tamanho da asa</label>
             <input type="text" id="tamasa" name="tamasa" required>
-            <label for="velocidade">Velocidade</label>
+            
+            <label class="label" for="velocidade">Velocidade</label>
             <input type="text" id="vel" name="vel" required>
-            <label for="qntassentos">Quantidade de assentos</label>
+            
+            <label class="label" for="qntassentos">Quantidade de assentos</label>
             <input type="number" id="qntassentos" name="qntassentos" required>
-            <label for="modelo">Modelo do avião</label>
+            
+            <label class="label" for="modelo">Modelo do avião</label>
             <input type="text" id="mod" name="mod" required>
-            <label for="obs">Observações</label>
+            
+            <label class="label" for="obs">Observações</label>
             <input type="text" id="obs" name="obs">
+            
             <div id="btns">
             <button type="reset"><img src="../img/cancelar.png"></button>
             <button type="submit"><img src="../img/pasta.png"></button>

@@ -1,40 +1,50 @@
-body{
+body {
     margin: 0px;
     display: flex;
     flex-direction: column;
-    
+
 }
-#topo{
+
+#topo {
+    width: 100%;
     display: flex;
     height: 50px;
-    background-color: #808080;;
+    background-color: #2980b9;
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
 }
-#texto, #texto a{
+
+.texto,
+.texto a {
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
     text-decoration: none;
     font-size: large;
 }
-p{
+
+p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
 }
-#main{
+
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#menu1, #menu2{
+
+#menu1,
+#menu2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 30px;
 }
-#opt{
+
+
+#opt {
     width: 118px;
     height: 75px;
     border-style: solid;
@@ -42,126 +52,264 @@ p{
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    background-color: #808080;
+    background-color: #2980b9;
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#menu1, #menu2, #opt a{
+
+#menu1,
+#menu2,
+#opt a {
     color: #FFF;
     text-decoration: none;
     text-align: center;
 }
-img{
-height: 25px;
+
+
+
+
+img {
+    height: 25px;
 }
-main p, h4{
+
+main p,
+h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
 }
-form{
+
+form {
     width: 300px;
 }
-#forms{
+
+#forms {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     margin-top: 30px;
 }
-#form1{
+
+#form1 {
     display: flex;
     flex-direction: column;
     margin: 30px;
 }
-#form2{
+
+#form2 {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#form3{
+
+#form3 {
     height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-form label{
+
+form label {
     font-family: Arial, Helvetica, sans-serif;
     padding: 7px;
 }
-button{
+
+button {
     margin-top: 15px;
     border: none;
     background-color: #fff;
     cursor: pointer;
-    
+
 }
-#rodape p{
+
+#rodape p {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: smaller;
 }
-#btns{
+
+#btns {
     align-self: flex-end;
 }
-#checkbox{
+
+#checkbox {
     display: flex;
     flex-direction: column;
     width: 150px;
 }
-#results{
-    border-style:solid;
+
+#results {
+    border-style: solid;
     border-color: #000;
     width: 350px;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
-#doc h2,h3{
+
+#doc h2,
+h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
-#doc h3{
+
+#doc h3 {
     font-weight: lighter;
 }
-#notifications{
+
+#notifications {
     display: flex;
     justify-content: space-between;
     width: 70%;
 }
+
 hr {
-	height:auto; 
+    height: auto;
     border: 0.5px solid;
-	border-color: #000;
-	}
-#buscaaviao{
+    border-color: #000;
+}
+
+#buscaaviao {
     margin-top: 30px;
     width: 200px;
     height: 30px;
 }
+
 #busca {
     display: flex;
     justify-content: space-between;
-    border:1px solid #444;
-    width:220px;
+    border: 1px solid #444;
+    width: 220px;
     margin: 30px;
     margin-bottom: 30;
 }
 
-#busca input, button {
-    border:0;    
+#busca input,
+button {
+    border: 0;
     margin: 0;
 }
-#infos h2,h3{
+
+#infos h2,
+h3 {
     font-size: small;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
-#box{
+
+#box {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #menu1,
+    #menu2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding-top: 0px;
+    }
+
+    #opt {
+        width: 200px;
+        height: 85px;
+        border-style: solid;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        margin: 10px;
+        /*background-color: #808080;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: #000;*/
+    }
+
+    #menu1,
+    #menu2,
+    #opt a {
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #forms {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #form1 {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        flex: 1;
+    }
+
+    #form2 {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #form3 {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    form label {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    select {
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 4px;
+
+    }
+
+    #opts {
+        display: flex;
+        max-width: 80%;
+        width: 100vw;
+        justify-content: space-between;
+
+
+    }
+
+    input[type=checkbox] {
+        width: 15px;
+    }
+
+    #main {
+        margin-left: 15px;
+    }
 }

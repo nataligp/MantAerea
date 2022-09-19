@@ -1,8 +1,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/estilo.css">
-
+        <script src="/js/script.js"></script>
     </head>
         <body>
 <header id="topo">
@@ -11,7 +13,7 @@
     <a href="notifi.html"><img src="../img/bell.png" alt="ícone com um sino indicando as notificações"></a>
 </header>
 <main id="main">
-    <form id="form2" name="busca" action="../js/script.js">
+    <form id="form2" name="busca" >
         <div id="form3">
         <input type="text" name="aviao" id="aviao" placeholder="Avião">     
     <input type="text" name="numman" id="numman" placeholder="N° da manutenção">
@@ -20,11 +22,11 @@
     <input type="text" name="data" id="data" placeholder="Data"> 
     <input type="text" name="mot" id="mot" placeholder="Motivo">   
 </div>
-    <button style="align-self: baseline;" type="submit"><img src="../img/lupa.png"></button>
+    <button onclick="getRelatorios()" style="align-self: baseline;" type="submit"><img src="../img/lupa.png"></button>
     
 </form>
-       <p>Manutenções que atendem aos filtros</p>
-       <div id="results">
+    <p>Manutenções que atendem aos filtros</p>
+    <div id="results">
     </div>
     </div>
 </main>
